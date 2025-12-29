@@ -1,0 +1,22 @@
+<svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ілюстрація акваріумної риби гурамі">
+  <defs>
+    <linearGradient id="body" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8bd3e6"/>
+      <stop offset="50%" stop-color="#5ba3f5"/>
+      <stop offset="100%" stop-color="#7cd4d5"/>
+    </linearGradient>
+    <linearGradient id="fin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b0c9ff" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="#e7f5ff"/>
+  <ellipse cx="200" cy="130" rx="150" ry="70" fill="url(#body)" stroke="#1d4ed8" stroke-width="3"/>
+  <circle cx="250" cy="120" r="12" fill="#0f172a"/>
+  <circle cx="248" cy="118" r="5" fill="#fff"/>
+  <path d="M80 130 Q50 100 40 130 Q50 160 80 130 Z" fill="url(#fin)" stroke="#1d4ed8" stroke-width="3"/>
+  <path d="M320 130 Q360 100 360 130 Q360 160 320 130 Z" fill="#4f46e5" stroke="#1d4ed8" stroke-width="3"/>
+  <path d="M160 200 Q200 230 240 200" fill="none" stroke="#1d4ed8" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <line x1="220" y1="150" x2="300" y2="170" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round"/>
+  <line x1="220" y1="110" x2="300" y2="90" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round"/>
+</svg>

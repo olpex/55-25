@@ -1,72 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My hobbies</title>
+    <title>Моє акваріумне хобі</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" id="home">
-        <div class="header_title">
-            <h1>Моє захоплення</h1>
+    <header class="topbar" id="home">
+        <div class="container topbar__content">
+            <div class="brand">
+                <span class="brand__dot"></span>
+                <span class="brand__title">Aquarium Zen</span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Головна</a>
+                <a href="#about">Про мене</a>
+                <a href="#plans">Мої плани</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+            <a class="button button--ghost" href="#contacts">Написати мені</a>
         </div>
-        <nav class="nav">
-            <a href="#home">ГОЛОВНА</a>
-            <a href="#about">ПРО МЕНЕ</a>
-            <a href="#plans">МОЇ ПЛАНИ</a>
-            <a href="#contacts">КОНТАКТИ</a>
-        </nav>
     </header>
 
     <main>
-        <section class="section section--intro">
-            <div class="section_inner">
-                <h2>Дім для моїх акваріумних рибок</h2>
-                <p class="intro_text">Колекціонування і догляд за рибками вчить уважності до деталей, терпінню та любові до природи. Я створюю для них затишний простір, а кожна нова мешканка дарує ще більше натхнення.</p>
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <p class="eyebrow">Авторський блог про акваріумістику</p>
+                    <h1>Дім для акваріумних рибок, що надихає</h1>
+                    <p class="lead">Колекціоную та дбаю про рибок, створюю для них збалансовані та красиві біотопи, щоб кожна мешканка почувалася затишно.</p>
+                    <div class="hero__actions">
+                        <a class="button" href="#plans">Переглянути плани</a>
+                        <a class="button button--ghost" href="#about">Дізнатись більше</a>
+                    </div>
+                    <ul class="pill-list">
+                        <li>Баланс природи та технологій</li>
+                        <li>Здоровʼя риб на першому місці</li>
+                        <li>Стале вдосконалення акваріумів</li>
+                    </ul>
+                </div>
+                <div class="hero__visual">
+                    <div class="glass-card">
+                        <img src="img/2 1.png" alt="Яскрава рибка в акваріумі">
+                        <div class="glass-card__body">
+                            <p>«Занурення в підводний світ щодня нагадує про силу спокою та терпіння»</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="section" id="about">
-            <div class="section_inner">
-                <h2>Про моє захоплення</h2>
-                <div class="section_items">
-                    <article class="section_item1">
-                        <div class="section_media">
-                            <img class="fish1" src="img/2 1.png" alt="Blue fish">
+            <div class="container">
+                <div class="section__header">
+                    <p class="eyebrow">Про моє захоплення</p>
+                    <h2>Рибки, що додають кольорів буденності</h2>
+                    <p class="section__lede">Кожен вид має свій характер, потреби та красу. Я досліджую їх, щоб створити найкращі умови проживання.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="feature-card">
+                        <div class="feature-card__media">
+                            <img src="img/2 1.png" alt="Рибка півник синього кольору">
                         </div>
-                        <p>Гарними і невибагливими мешканцями акваріума стануть півники. Для цих рибок ідеальними є умови тропічних водойм, тому температура в акваріумі повинна бути не нижче 24 ° С, і не вище 28 ° С. Самці відрізняються агресивним характером. Вони насилу уживаються в одному акваріумі. Щоб створити сприятливі умови для цих задирак, краще купувати довгий, але не дуже високий акваріум.</p>
+                        <div class="feature-card__body">
+                            <h3>Півники</h3>
+                            <p>Ідеальні для тропічних акваріумів при 24–28 °C. Самці мають яскравий характер, тому потребують простору та зонованого житла.</p>
+                            <span class="tag">Активні</span>
+                        </div>
                     </article>
-                    <article class="section_item1">
-                        <div class="section_media">
-                            <img class="fish2" src="img/1 1.png" alt="Yellow fish">
+                    <article class="feature-card">
+                        <div class="feature-card__media">
+                            <img src="img/1 1.png" alt="Жовта карликова цихліда">
                         </div>
-                        <p>Карликові цихліди з роду Apistograrnma цінуються не лише за свою красу, а й за незвичайну поведінку. Зрозуміло, насамперед привертають увагу найменш відомі представники цього роду, але вони, на жаль, дуже рідко зустрічаються у любителів. Після восьми тижнів самець досягає 7 см, а самка лише до 4,5 см. Основний колір цих риб жовтуватий, лусочки облямовані темною смужкою і тому добре виділяються.</p>
+                        <div class="feature-card__body">
+                            <h3>Карликові цихліди</h3>
+                            <p>Apistogramma вражають поведінкою та кольорами. Самці виростають до 7 см, самки — до 4,5 см. Люблять укриття й мʼяку воду.</p>
+                            <span class="tag">Спостережливі</span>
+                        </div>
                     </article>
-                    <article class="section_item1">
-                        <div class="section_media">
-                            <img class="fish3" src="img/3 1.png" alt="Red fish">
+                    <article class="feature-card">
+                        <div class="feature-card__media">
+                            <img src="img/3 1.png" alt="Тернеція на темному тлі">
                         </div>
-                        <p>Тернеція — срібляста з трьома чорними поперечними смугами з боків, одна з яких перетинає очі. Самці дрібніші за самок, майже чорні, мають більш загострений спинний плавець. Дорослі тернеції сягають завдовжки 3,5 — 4,5 см. Тіло плоске, забарвлення темно-срібляста, вздовж тіла розташовані три чорні смуги. Одна з них проходить через око, друга — біля закінчення зябр, третя — від початку верхнього плавця. Решта тіла — від третьої смуги, включаючи верхні і анальний плавники, чорна, що створює враження спіднички. Грудні, хвостовий і черевні плавці досить прозорі.</p>
+                        <div class="feature-card__body">
+                            <h3>Тернеції</h3>
+                            <p>Стримані сріблясті рибки з характерними смужками. Досягають 3,5–4,5 см та добре почуваються в зграйках у мʼякій, чистій воді.</p>
+                            <span class="tag">Зграйні</span>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section section--plans" id="plans">
-            <div class="section_inner">
-                <h2>Мої плани</h2>
-                <p>Наступним кроком я хочу додати більше живих рослин і створити природний біотоп для кожного виду. Поступово оновлюю техніку, щоб покращити фільтрацію та освітлення, не порушуючи комфорт рибок.</p>
+        <section class="section section--muted" id="plans">
+            <div class="container">
+                <div class="section__header">
+                    <p class="eyebrow">Мої плани</p>
+                    <h2>Розвиток акваріумного простору</h2>
+                    <p class="section__lede">Крок за кроком удосконалюю середовище: додаю природні елементи, оновлюю техніку та спостерігаю за поведінкою мешканців.</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <div class="timeline__badge">1</div>
+                        <div class="timeline__body">
+                            <h3>Більше живих рослин</h3>
+                            <p>Створюю природний біотоп з використанням анубіасів, ехінодорусів та мохів для прихистку й фільтрації води.</p>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <div class="timeline__badge">2</div>
+                        <div class="timeline__body">
+                            <h3>Оновлена фільтрація</h3>
+                            <p>Впроваджую тихі енергоефективні фільтри з біозавантаженням, щоб покращити якість води без стресу для риб.</p>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <div class="timeline__badge">3</div>
+                        <div class="timeline__body">
+                            <h3>Продумане освітлення</h3>
+                            <p>Налаштовую спектр та інтенсивність під рослини й нічний режим, аби підтримувати циркадні ритми акваріумних мешканців.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section class="section section--contacts" id="contacts">
-            <div class="section_inner">
-                <h2>Контакти</h2>
-                <p>Я завжди радий обміну досвідом. Напишіть мені на <a href="mailto:aquahobby@example.com">aquahobby@example.com</a> або долучайтеся до наших обговорень у локальному клубі акваріумістів.</p>
+        <section class="section section--dark" id="contacts">
+            <div class="container contact">
+                <div class="contact__text">
+                    <p class="eyebrow">Контакти</p>
+                    <h2>Обміняймося досвідом</h2>
+                    <p class="section__lede">Я відкритий до порад, колаборацій та цікавих історій про акваріуми. Напишіть — відповім найближчим часом.</p>
+                    <div class="contact__actions">
+                        <a class="button" href="mailto:aquahobby@example.com">Написати лист</a>
+                        <a class="button button--ghost" href="#home">Повернутися нагору</a>
+                    </div>
+                </div>
+                <div class="contact__card">
+                    <p class="contact__label">Email</p>
+                    <a class="contact__link" href="mailto:aquahobby@example.com">aquahobby@example.com</a>
+                    <p class="contact__note">Локальний клуб акваріумістів — зустрічі щомісяця, приєднуйтесь!</p>
+                </div>
             </div>
         </section>
     </main>

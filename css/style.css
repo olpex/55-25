@@ -5,8 +5,9 @@
 
 body{
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
     background: #E2DF98;
     margin: 0 auto;
 }
@@ -48,6 +49,10 @@ a:hover {
 .section {
     width: 1480px;
     height: 765px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .fish1, .fish2, .fish3 {

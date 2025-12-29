@@ -136,14 +136,25 @@
                     <h2>Обміняймося досвідом</h2>
                     <p class="section__lede">Я відкритий до порад, колаборацій та цікавих історій про акваріуми. Напишіть — відповім найближчим часом.</p>
                     <div class="contact__actions">
-                        <a class="button" href="mailto:aquahobby@example.com">Написати лист</a>
+                        <a class="button" href="mailto:olppara@gmail.com">Написати лист</a>
                         <a class="button button--ghost" href="#home">Повернутися нагору</a>
                     </div>
                 </div>
-                <div class="contact__card">
-                    <p class="contact__label">Email</p>
-                    <a class="contact__link" href="mailto:aquahobby@example.com">aquahobby@example.com</a>
-                    <p class="contact__note">Локальний клуб акваріумістів — зустрічі щомісяця, приєднуйтесь!</p>
+                <div class="contact__card contact__card--form">
+                    <p class="contact__label">Напишіть мені</p>
+                    <form class="contact__form" action="mailto:olppara@gmail.com" method="post" enctype="text/plain">
+                        <label class="form__label" for="name">Імʼя</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Ваше імʼя" required>
+
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                        <label class="form__label" for="message">Текст повідомлення</label>
+                        <textarea class="form__textarea" id="message" name="message" rows="4" placeholder="Поділіться своїми ідеями чи запитаннями" required></textarea>
+
+                        <button class="button" type="submit">Надіслати відгук</button>
+                    </form>
+                    <p class="form__note">Ваші дані залишаться конфіденційними й не передаватимуться третім особам. Зазвичай відповідаю протягом 1–2 робочих днів.</p>
                 </div>
             </div>
         </section>

@@ -381,6 +381,64 @@ img {
     margin-top: 0.75rem;
 }
 
+.contact__card--form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact__form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.form__label {
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: rgba(15, 23, 42, 0.35);
+    color: #e2e8f0;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: rgba(56, 189, 248, 0.7);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact__form .button {
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.form__note {
+    color: #cbd5e1;
+    line-height: 1.6;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 12px;
+    padding: 0.75rem 0.85rem;
+}
+
 @media (max-width: 720px) {
     .topbar__content {
         flex-wrap: wrap;
